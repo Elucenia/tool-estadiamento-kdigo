@@ -1,0 +1,181 @@
+{
+  "tool": {
+    "id": "estadiamento-kdigo",
+    "title": "Estadiamento KDIGO da doença renal crônica",
+    "short": "Categoria G/A e risco pelo mapa de calor",
+    "desc": "Classifique a doença renal crônica pela KDIGO: categoria de TFG (G1 a G5), albuminúria (A1 a A3), risco pelo mapa de calor e frequência de monitorização.",
+    "lead": "Combina a taxa de filtração glomerular e a albuminúria para classificar a doença renal crônica e estimar o risco de progressão, eventos cardiovasculares e morte, como no mapa de calor da KDIGO.",
+    "spec": [
+      "nefrologia",
+      "clinica-medica",
+      "medicina-de-familia-e-comunidade",
+      "endocrinologia-e-metabologia",
+      "cardiologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "tfg",
+        "TFG estimada (ou medida)",
+        "num",
+        {
+          "min": 1,
+          "max": 200,
+          "unit": "mL/min/1,73 m²",
+          "ph": "52"
+        }
+      ],
+      [
+        "rac",
+        "Relação albumina/creatinina urinária (RAC)",
+        "num",
+        {
+          "min": 0,
+          "max": 10000,
+          "step": 0.1,
+          "unit": "mg/g",
+          "ph": "45"
+        }
+      ]
+    ],
+    "formula": "<p><strong>TFG (mL/min/1,73 m²):</strong> G1 ≥ 90 · G2 60–89 · G3a 45–59 · G3b 30–44 · G4 15–29 · G5 &lt; 15.</p><p><strong>Albuminúria (RAC, mg/g):</strong> A1 &lt; 30 · A2 30–300 · A3 &gt; 300.</p><p>O risco segue o mapa de calor da KDIGO: verde (baixo), amarelo (moderadamente aumentado), laranja (alto) e vermelho (muito alto).</p>",
+    "table": [
+      [
+        "TFG \\ RAC",
+        "A1 (&lt; 30)",
+        "A2 (30–300)",
+        "A3 (&gt; 300)"
+      ],
+      [
+        "G1 e G2",
+        "Baixo*",
+        "Moderado",
+        "Alto"
+      ],
+      [
+        "G3a",
+        "Moderado",
+        "Alto",
+        "Muito alto"
+      ],
+      [
+        "G3b",
+        "Alto",
+        "Muito alto",
+        "Muito alto"
+      ],
+      [
+        "G4 e G5",
+        "Muito alto",
+        "Muito alto",
+        "Muito alto"
+      ]
+    ],
+    "table_note": "*Sem outro marcador de lesão renal, G1–G2 com A1 não é doença renal crônica. O diagnóstico exige alteração por mais de 3 meses.",
+    "tips": [
+      "A classificação só vale para alterações que duram <strong>mais de 3 meses</strong>. Numa queda aguda da TFG, pense em lesão renal aguda.",
+      "Confirme a albuminúria com 2 de 3 amostras alteradas em 3 a 6 meses: exercício, febre, infecção urinária e hiperglicemia elevam a RAC transitoriamente.",
+      "Encaminhe ao nefrologista quando TFG &lt; 30, RAC ≥ 300 mg/g persistente, queda rápida da TFG, hematúria glomerular ou risco de falência em 5 anos ≥ 3% pelo KFRE.",
+      "Proteinúria de 24 h ou relação proteína/creatinina não substituem a RAC na tabela; se só houver fita urinária, 1+ corresponde aproximadamente a A2.",
+      "Para calcular a TFG a partir da creatinina, use a ferramenta TFG (CKD-EPI 2021)."
+    ],
+    "sources": [
+      [
+        "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
+        "https://doi.org/10.1016/j.kint.2023.10.018"
+      ],
+      [
+        "Levey AS et al. The definition, classification, and prognosis of chronic kidney disease: a KDIGO Controversies Conference report. Kidney Int, 2011.",
+        "https://doi.org/10.1038/ki.2010.483"
+      ]
+    ],
+    "cases": [
+      [
+        "TFG 95, RAC 10: G1 A1, baixo risco",
+        {
+          "tfg": 95,
+          "rac": 10
+        },
+        {
+          "main": "G1 A1",
+          "level": "low",
+          "verdict": "baixo risco"
+        }
+      ],
+      [
+        "TFG 70, RAC 40: G2 A2, risco moderado",
+        {
+          "tfg": 70,
+          "rac": 40
+        },
+        {
+          "main": "G2 A2",
+          "level": "mid",
+          "verdict": "moderadamente aumentado"
+        }
+      ],
+      [
+        "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        {
+          "tfg": 45,
+          "rac": 300
+        },
+        {
+          "main": "G3a A2",
+          "level": "high",
+          "verdict": "G3a A2: alto risco"
+        }
+      ],
+      [
+        "TFG 25, RAC 20: G4 A1, muito alto risco",
+        {
+          "tfg": 25,
+          "rac": 20
+        },
+        {
+          "main": "G4 A1",
+          "level": "high",
+          "verdict": "muito alto risco"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "id": "estadiamento-kdigo",
+    "status": "needs-review",
+    "reason": "O mapa G/A deve ser apresentado como categoria, não como diagnóstico por um exame. DRC requer cronicidade e contexto. Conferir limites de albuminúria, evidência de lesão e a nomenclatura atual; ocultar encaminhamento e frequência automáticos do arquivo importado.",
+    "sourceUrl": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+    "sourceTitle": "KDIGO 2024 Clinical Practice Guideline for CKD",
+    "sourceDate": "2024-03",
+    "publisherRegion": "Internacional / KDIGO",
+    "checkedAt": "2026-09-25",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "label": "TFG 95, RAC 10: G1 A1, baixo risco",
+    "input": {
+      "tfg": 95,
+      "rac": 10
+    },
+    "expected": {
+      "main": "G1 A1",
+      "level": "low",
+      "verdict": "baixo risco"
+    },
+    "originalInput": {
+      "tfg": 95,
+      "rac": 10
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "TFG 70, RAC 40: G2 A2, risco moderado",
+    "input": {
+      "tfg": 70,
+      "rac": 40
+    },
+    "expected": {
+      "main": "G2 A2",
+      "level": "mid",
+      "verdict": "moderadamente aumentado"
+    },
+    "originalInput": {
+      "tfg": 70,
+      "rac": 40
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+    "input": {
+      "tfg": 45,
+      "rac": 300
+    },
+    "expected": {
+      "main": "G3a A2",
+      "level": "high",
+      "verdict": "G3a A2: alto risco"
+    },
+    "originalInput": {
+      "tfg": 45,
+      "rac": 300
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "TFG 25, RAC 20: G4 A1, muito alto risco",
+    "input": {
+      "tfg": 25,
+      "rac": 20
+    },
+    "expected": {
+      "main": "G4 A1",
+      "level": "high",
+      "verdict": "muito alto risco"
+    },
+    "originalInput": {
+      "tfg": 25,
+      "rac": 20
+    },
+    "expandedZeroOptions": []
+  }
+]
