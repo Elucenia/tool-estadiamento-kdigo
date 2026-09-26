@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-estadiamento-kdigo · Elucenia · https://github.com/Elucenia/tool-estadiamento-kdigo
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"estadiamento-kdigo","title":"Estadiamento KDIGO da doença renal crônica","fields":[["tfg","TFG estimada (ou medida)","num",{"min":1,"max":200,"unit":"mL/min/1,73 m²","ph":"52"}],["rac","Relação albumina/creatinina urinária (RAC)","num",{"min":0,"max":10000,"step":0.1,"unit":"mg/g","ph":"45"}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
