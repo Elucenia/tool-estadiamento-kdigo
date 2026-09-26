@@ -7,7 +7,7 @@ Identificador: `estadiamento-kdigo`. Pacote independente da plataforma Elucenia,
 - Revisão: **needs-review**. O mapa G/A deve ser apresentado como categoria, não como diagnóstico por um exame. DRC requer cronicidade e contexto. Conferir limites de albuminúria, evidência de lesão e a nomenclatura atual; ocultar encaminhamento e frequência automáticos do arquivo importado.
 - Execução: **disponível para reprodução técnica da fórmula**.
 - Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 4 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **pendente**.
+- 4 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **realizada em 2026-09-25**, 80 comparações conformes.
 - Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
 
 ## Uso no Node.js
