@@ -1,0 +1,877 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "estadiamento-kdigo",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/estadiamento-kdigo/calculator.js",
+    "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b",
+    "bytes": 5746
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 4,
+    "replayed": 4,
+    "passed": 4,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "estadiamento-kdigo",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+      "originalInput": {
+        "tfg": 95,
+        "rac": 10
+      },
+      "input": {
+        "tfg": 95,
+        "rac": 10
+      },
+      "amendments": [],
+      "expected": {
+        "main": "G1 A1",
+        "level": "low",
+        "verdict": "baixo risco"
+      },
+      "recordedResult": {
+        "main": [
+          "G1 A1",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G1",
+          "a": "A1",
+          "risk": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tfg": 95,
+            "rac": 10
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+          "startedAt": "2026-10-05T17:37:54.040Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estadiamento-kdigo",
+              "main": [
+                "G1 A1",
+                ""
+              ],
+              "label": "Categoria KDIGO (TFG e albuminúria)",
+              "raw": {
+                "g": "G1",
+                "a": "A1",
+                "risk": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "85ab5430ebc4581733afec1ed594094fce3d1d42b5d7abca1cfefd32d0db0bd1",
+          "bytes": 177,
+          "elapsedMs": 4.2999999999883585
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "startedAt": "2026-10-05T17:37:54.040Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estadiamento-kdigo",
+            "main": [
+              "G1 A1",
+              ""
+            ],
+            "label": "Categoria KDIGO (TFG e albuminúria)",
+            "raw": {
+              "g": "G1",
+              "a": "A1",
+              "risk": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "85ab5430ebc4581733afec1ed594094fce3d1d42b5d7abca1cfefd32d0db0bd1",
+        "bytes": 177,
+        "elapsedMs": 4.2999999999883585
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "G1 A1",
+            "obtained": "G1 A1",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.g",
+            "expected": "G1",
+            "obtained": "G1",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": "A1",
+            "obtained": "A1",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risk",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "G1 A1",
+            "obtained": "G1 A1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "estadiamento-kdigo",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+      "originalInput": {
+        "tfg": 70,
+        "rac": 40
+      },
+      "input": {
+        "tfg": 70,
+        "rac": 40
+      },
+      "amendments": [],
+      "expected": {
+        "main": "G2 A2",
+        "level": "mid",
+        "verdict": "moderadamente aumentado"
+      },
+      "recordedResult": {
+        "main": [
+          "G2 A2",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G2",
+          "a": "A2",
+          "risk": 1
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tfg": 70,
+            "rac": 40
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+          "startedAt": "2026-10-05T17:37:54.353Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estadiamento-kdigo",
+              "main": [
+                "G2 A2",
+                ""
+              ],
+              "label": "Categoria KDIGO (TFG e albuminúria)",
+              "raw": {
+                "g": "G2",
+                "a": "A2",
+                "risk": 1
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "d64940b789e565bc7fdde7d2ee1a68e229aa689777dccfbf3f3ee6a0d7c28286",
+          "bytes": 177,
+          "elapsedMs": 2.8967999999877065
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "startedAt": "2026-10-05T17:37:54.353Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estadiamento-kdigo",
+            "main": [
+              "G2 A2",
+              ""
+            ],
+            "label": "Categoria KDIGO (TFG e albuminúria)",
+            "raw": {
+              "g": "G2",
+              "a": "A2",
+              "risk": 1
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "d64940b789e565bc7fdde7d2ee1a68e229aa689777dccfbf3f3ee6a0d7c28286",
+        "bytes": 177,
+        "elapsedMs": 2.8967999999877065
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "G2 A2",
+            "obtained": "G2 A2",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.g",
+            "expected": "G2",
+            "obtained": "G2",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": "A2",
+            "obtained": "A2",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risk",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "G2 A2",
+            "obtained": "G2 A2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "estadiamento-kdigo",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+      "originalInput": {
+        "tfg": 45,
+        "rac": 300
+      },
+      "input": {
+        "tfg": 45,
+        "rac": 300
+      },
+      "amendments": [],
+      "expected": {
+        "main": "G3a A2",
+        "level": "high",
+        "verdict": "G3a A2: alto risco"
+      },
+      "recordedResult": {
+        "main": [
+          "G3a A2",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G3a",
+          "a": "A2",
+          "risk": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tfg": 45,
+            "rac": 300
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+          "startedAt": "2026-10-05T17:37:54.667Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estadiamento-kdigo",
+              "main": [
+                "G3a A2",
+                ""
+              ],
+              "label": "Categoria KDIGO (TFG e albuminúria)",
+              "raw": {
+                "g": "G3a",
+                "a": "A2",
+                "risk": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "7c2bed2aeeebd12a65369be60b275c55990576fd514692ececad3b042e343382",
+          "bytes": 179,
+          "elapsedMs": 2.250800000008894
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "startedAt": "2026-10-05T17:37:54.667Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estadiamento-kdigo",
+            "main": [
+              "G3a A2",
+              ""
+            ],
+            "label": "Categoria KDIGO (TFG e albuminúria)",
+            "raw": {
+              "g": "G3a",
+              "a": "A2",
+              "risk": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "7c2bed2aeeebd12a65369be60b275c55990576fd514692ececad3b042e343382",
+        "bytes": 179,
+        "elapsedMs": 2.250800000008894
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "G3a A2",
+            "obtained": "G3a A2",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.g",
+            "expected": "G3a",
+            "obtained": "G3a",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": "A2",
+            "obtained": "A2",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risk",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "G3a A2",
+            "obtained": "G3a A2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "estadiamento-kdigo",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+      "originalInput": {
+        "tfg": 25,
+        "rac": 20
+      },
+      "input": {
+        "tfg": 25,
+        "rac": 20
+      },
+      "amendments": [],
+      "expected": {
+        "main": "G4 A1",
+        "level": "high",
+        "verdict": "muito alto risco"
+      },
+      "recordedResult": {
+        "main": [
+          "G4 A1",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G4",
+          "a": "A1",
+          "risk": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "tfg": 25,
+            "rac": 20
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+          "startedAt": "2026-10-05T17:37:54.980Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "estadiamento-kdigo",
+              "main": [
+                "G4 A1",
+                ""
+              ],
+              "label": "Categoria KDIGO (TFG e albuminúria)",
+              "raw": {
+                "g": "G4",
+                "a": "A1",
+                "risk": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "383fedf45662782ddd7368fed328af3804aa292db439852585243f0a81727a69",
+          "bytes": 177,
+          "elapsedMs": 2.840700000000652
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/estadiamento-kdigo/calculate",
+        "startedAt": "2026-10-05T17:37:54.980Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "estadiamento-kdigo",
+            "main": [
+              "G4 A1",
+              ""
+            ],
+            "label": "Categoria KDIGO (TFG e albuminúria)",
+            "raw": {
+              "g": "G4",
+              "a": "A1",
+              "risk": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "383fedf45662782ddd7368fed328af3804aa292db439852585243f0a81727a69",
+        "bytes": 177,
+        "elapsedMs": 2.840700000000652
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "G4 A1",
+            "obtained": "G4 A1",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.g",
+            "expected": "G4",
+            "obtained": "G4",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.a",
+            "expected": "A1",
+            "obtained": "A1",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.risk",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "G4 A1",
+            "obtained": "G4 A1",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
