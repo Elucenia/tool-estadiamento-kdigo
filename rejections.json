@@ -1,0 +1,276 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tfg",
+    "input": {
+      "rac": 10
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tfg",
+    "input": {
+      "tfg": "",
+      "rac": 10
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" tfg",
+    "input": {
+      "tfg": "NaN",
+      "rac": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" tfg",
+    "input": {
+      "tfg": "Infinity",
+      "rac": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" tfg",
+    "input": {
+      "tfg": "1e309",
+      "rac": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" tfg",
+    "input": {
+      "tfg": "invalid",
+      "rac": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} tfg",
+    "input": {
+      "tfg": {},
+      "rac": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true tfg",
+    "input": {
+      "tfg": true,
+      "rac": 10
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum tfg",
+    "input": {
+      "tfg": 0,
+      "rac": 10
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum tfg",
+    "input": {
+      "tfg": 220,
+      "rac": 10
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "tfg"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field rac",
+    "input": {
+      "tfg": 95
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field rac",
+    "input": {
+      "tfg": 95,
+      "rac": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" rac",
+    "input": {
+      "tfg": 95,
+      "rac": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" rac",
+    "input": {
+      "tfg": 95,
+      "rac": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" rac",
+    "input": {
+      "tfg": 95,
+      "rac": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" rac",
+    "input": {
+      "tfg": 95,
+      "rac": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} rac",
+    "input": {
+      "tfg": 95,
+      "rac": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true rac",
+    "input": {
+      "tfg": 95,
+      "rac": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum rac",
+    "input": {
+      "tfg": 95,
+      "rac": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum rac",
+    "input": {
+      "tfg": 95,
+      "rac": 11000
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "rac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

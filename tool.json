@@ -5,6 +5,7 @@
     "short": "Categoria G/A e risco pelo mapa de calor",
     "desc": "Classifique a doença renal crônica pela KDIGO: categoria de TFG (G1 a G5), albuminúria (A1 a A3), risco pelo mapa de calor e frequência de monitorização.",
     "lead": "Combina a taxa de filtração glomerular e a albuminúria para classificar a doença renal crônica e estimar o risco de progressão, eventos cardiovasculares e morte, como no mapa de calor da KDIGO.",
+    "kind": "Calculadora",
     "spec": [
       "nefrologia",
       "clinica-medica",
@@ -12,7 +13,6 @@
       "endocrinologia-e-metabologia",
       "cardiologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "tfg",
@@ -39,46 +39,6 @@
       ]
     ],
     "formula": "<p><strong>TFG (mL/min/1,73 m²):</strong> G1 ≥ 90 · G2 60–89 · G3a 45–59 · G3b 30–44 · G4 15–29 · G5 &lt; 15.</p><p><strong>Albuminúria (RAC, mg/g):</strong> A1 &lt; 30 · A2 30–300 · A3 &gt; 300.</p><p>O risco segue o mapa de calor da KDIGO: verde (baixo), amarelo (moderadamente aumentado), laranja (alto) e vermelho (muito alto).</p>",
-    "table": [
-      [
-        "TFG \\ RAC",
-        "A1 (&lt; 30)",
-        "A2 (30–300)",
-        "A3 (&gt; 300)"
-      ],
-      [
-        "G1 e G2",
-        "Baixo*",
-        "Moderado",
-        "Alto"
-      ],
-      [
-        "G3a",
-        "Moderado",
-        "Alto",
-        "Muito alto"
-      ],
-      [
-        "G3b",
-        "Alto",
-        "Muito alto",
-        "Muito alto"
-      ],
-      [
-        "G4 e G5",
-        "Muito alto",
-        "Muito alto",
-        "Muito alto"
-      ]
-    ],
-    "table_note": "*Sem outro marcador de lesão renal, G1–G2 com A1 não é doença renal crônica. O diagnóstico exige alteração por mais de 3 meses.",
-    "tips": [
-      "A classificação só vale para alterações que duram <strong>mais de 3 meses</strong>. Numa queda aguda da TFG, pense em lesão renal aguda.",
-      "Confirme a albuminúria com 2 de 3 amostras alteradas em 3 a 6 meses: exercício, febre, infecção urinária e hiperglicemia elevam a RAC transitoriamente.",
-      "Encaminhe ao nefrologista quando TFG &lt; 30, RAC ≥ 300 mg/g persistente, queda rápida da TFG, hematúria glomerular ou risco de falência em 5 anos ≥ 3% pelo KFRE.",
-      "Proteinúria de 24 h ou relação proteína/creatinina não substituem a RAC na tabela; se só houver fita urinária, 1+ corresponde aproximadamente a A2.",
-      "Para calcular a TFG a partir da creatinina, use a ferramenta TFG (CKD-EPI 2021)."
-    ],
     "sources": [
       [
         "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
@@ -87,6 +47,10 @@
       [
         "Levey AS et al. The definition, classification, and prognosis of chronic kidney disease: a KDIGO Controversies Conference report. Kidney Int, 2011.",
         "https://doi.org/10.1038/ki.2010.483"
+      ],
+      [
+        "KDIGO2024 CKD guideline",
+        "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf"
       ]
     ],
     "cases": [
@@ -139,9 +103,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -150,23 +111,350 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T16:03:00.177Z",
+      "total": 84,
+      "passed": 84,
+      "sourceRowCount": 84,
+      "uniqueApiInputCount": 84,
+      "sourceContextCount": 84,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "aea3a362387f4c7fa668556048c1932c9b9f5308a1947ab9ce9cf587e2370eb3",
+        "total": 84,
+        "bankRowCount": 84,
+        "uniqueApiInputCount": 84,
+        "sourceContextCount": 84,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/kdigo-pregnancy-age-independent-oracles-final25.json",
+            "sha256": "2c542b54712df602a6d782128acb77803c685dfe3ca4ad1ca8056eb69715e791"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+          "sha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5"
+        },
+        "packagingRequirement": "Copy this complete hashed bank into the fresh25 package. Previous24 packages and historical report ZIPs remain frozen and do not contain this evidence."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/three-prospective-source-input-identity-audit-final25-r2.json",
+          "sha256": "8a92ba3da5694cba856099c1165be0a25fba8eebcca9094ad5edd602ee398570"
+        },
+        "sourceRows": 84,
+        "uniqueApiInputs": 84,
+        "duplicateRows": 0
+      },
+      "scope": "KDIGO2024 Table2/Table3 G/A categories and risk-table codes; Figure13 monitoring lookup only where its albuminuria boundaries agree with Table3. Exactly300mg/g monitoring is withheld with a source-discrepancy message, not adjudicated or approved. No CKD diagnosis, clinical prognosis, referral or treatment/full-method approval.",
+      "sources": [
+        {
+          "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+          "edition": "KDIGO2024",
+          "sourceSha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+          "locator": "Table2/Table3, printedS137 PDFpage22; Figure13 printedS197 PDFpage82",
+          "access": "Original public PDF downloaded and both complete relevant pages visually inspected2026-10-04.",
+          "scope": "Table2/Table3 numerical categories and Figure13 table lookups where albuminuria definitions agree. Table3 uses A2 30–300/A3 >300; Figure13 uses 30–299/≥300. The exact300mg/g monitoring boundary is not adjudicated or approved. No disease diagnosis, prognosis, referral or treatment conformance."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+      "evidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+      "peerEvidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+      "peerEvidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+      "actualAdapterExecutions": 252,
+      "implementations": [
+        {
+          "id": "estadiamento-kdigo",
+          "app": "website",
+          "file": "apps/website/private/tool-code/estadiamento-kdigo/calculator.js",
+          "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/website/private/tool-code/estadiamento-kdigo/calculator.js",
+          "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+        },
+        {
+          "id": "estadiamento-kdigo",
+          "app": "dashboard",
+          "file": "apps/dashboard/private/tool-code/estadiamento-kdigo/calculator.js",
+          "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/dashboard/private/tool-code/estadiamento-kdigo/calculator.js",
+          "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+        },
+        {
+          "id": "estadiamento-kdigo",
+          "app": "command-center",
+          "file": "apps/command-center/private/tool-code/estadiamento-kdigo/calculator.js",
+          "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/command-center/private/tool-code/estadiamento-kdigo/calculator.js",
+          "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+        }
+      ],
+      "qualifications": [
+        "KDIGO2024 Table2/Table3 G/A categories and risk-table codes; Figure13 monitoring lookup only where its albuminuria boundaries agree with Table3. Exactly300mg/g monitoring is withheld with a source-discrepancy message, not adjudicated or approved. No CKD diagnosis, clinical prognosis, referral or treatment/full-method approval.",
+        "All862 original historical source fixtures/expected values/tolerances preserved. Four inline metadata cases are a declared subset of this complete downloadable bank.",
+        "Named arithmetic/source-code scope only; clinical, professional-language, instrument-rights and full-method approvals not performed."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "KDIGO 2024:CGA,6 categorias TFG(G 3 a/b)×3 albuminúria, heatmap; sem diagnósticoisolado",
+    "implementationVersion": "estadiamento-kdigo@native-2026-10-03+bea069ba29a0",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/38490803/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "TFG (mL/min/1,73 m²): G1 ≥ 90 · G2 60–89 · G3a 45–59 · G3b 30–44 · G4 15–29 · G5 < 15. Albuminúria (RAC, mg/g): A1 < 30 · A2 30–300 · A3 > 300. O risco segue o mapa de calor da KDIGO: verde (baixo), amarelo (moderadamente aumentado), laranja (alto) e vermelho (muito alto).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "tfg",
+            "label": "TFG estimada (ou medida)",
+            "type": "num",
+            "min": 1,
+            "max": 200,
+            "unit": "mL/min/1,73 m²",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "rac",
+            "label": "Relação albumina/creatinina urinária (RAC)",
+            "type": "num",
+            "min": 0,
+            "max": 10000,
+            "unit": "mg/g",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "b84c24ae5f6c981f62cc54432aeecfdf17dd04bb93325ba926149cf2b37ca6fe"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease. Kidney Int, 2024.",
+          "url": "https://doi.org/10.1016/j.kint.2023.10.018",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of Chronic Kidney Disease.",
+            "year": "2024",
+            "firstPublicationDate": "2024-04-01",
+            "doi": "10.1016/j.kint.2023.10.018",
+            "pmid": "38490803",
+            "journal": "Kidney international",
+            "authors": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/38490803/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Levey AS et al. The definition, classification, and prognosis of chronic kidney disease: a KDIGO Controversies Conference report. Kidney Int, 2011.",
+          "url": "https://doi.org/10.1038/ki.2010.483",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The definition, classification, and prognosis of chronic kidney disease: a KDIGO Controversies Conference report.",
+            "year": "2011",
+            "firstPublicationDate": "2010-12-08",
+            "doi": "10.1038/ki.2010.483",
+            "pmid": "21150873",
+            "journal": "Kidney international",
+            "authors": "Levey AS, de Jong PE, Coresh J, El Nahas M, Astor BC, Matsushita K, Gansevoort RT, Kasiske BL, Eckardt KU."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/21150873/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "b6b5f2ae9f75b9303be42d76f8406c66d8ae0dd5f84a5c701a802f5139641312",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T16:03:00.177Z",
+        "total": 84,
+        "passed": 84,
+        "sourceRowCount": 84,
+        "uniqueApiInputCount": 84,
+        "sourceContextCount": 84,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "aea3a362387f4c7fa668556048c1932c9b9f5308a1947ab9ce9cf587e2370eb3",
+          "total": 84,
+          "bankRowCount": 84,
+          "uniqueApiInputCount": 84,
+          "sourceContextCount": 84,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/kdigo-pregnancy-age-independent-oracles-final25.json",
+              "sha256": "2c542b54712df602a6d782128acb77803c685dfe3ca4ad1ca8056eb69715e791"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+            "sha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5"
+          },
+          "packagingRequirement": "Copy this complete hashed bank into the fresh25 package. Previous24 packages and historical report ZIPs remain frozen and do not contain this evidence."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/three-prospective-source-input-identity-audit-final25-r2.json",
+            "sha256": "8a92ba3da5694cba856099c1165be0a25fba8eebcca9094ad5edd602ee398570"
+          },
+          "sourceRows": 84,
+          "uniqueApiInputs": 84,
+          "duplicateRows": 0
+        },
+        "scope": "KDIGO2024 Table2/Table3 G/A categories and risk-table codes; Figure13 monitoring lookup only where its albuminuria boundaries agree with Table3. Exactly300mg/g monitoring is withheld with a source-discrepancy message, not adjudicated or approved. No CKD diagnosis, clinical prognosis, referral or treatment/full-method approval.",
+        "sources": [
+          {
+            "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+            "edition": "KDIGO2024",
+            "sourceSha256": "b18db280f7dc889a1a99447b779c0312cd536f939a5180b38894a5d68e4410c0",
+            "locator": "Table2/Table3, printedS137 PDFpage22; Figure13 printedS197 PDFpage82",
+            "access": "Original public PDF downloaded and both complete relevant pages visually inspected2026-10-04.",
+            "scope": "Table2/Table3 numerical categories and Figure13 table lookups where albuminuria definitions agree. Table3 uses A2 30–300/A3 >300; Figure13 uses 30–299/≥300. The exact300mg/g monitoring boundary is not adjudicated or approved. No disease diagnosis, prognosis, referral or treatment conformance."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+        "evidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+        "peerEvidencePath": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+        "peerEvidenceSha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5",
+        "actualAdapterExecutions": 252,
+        "implementations": [
+          {
+            "id": "estadiamento-kdigo",
+            "app": "website",
+            "file": "apps/website/private/tool-code/estadiamento-kdigo/calculator.js",
+            "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/website/private/tool-code/estadiamento-kdigo/calculator.js",
+            "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+          },
+          {
+            "id": "estadiamento-kdigo",
+            "app": "dashboard",
+            "file": "apps/dashboard/private/tool-code/estadiamento-kdigo/calculator.js",
+            "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/dashboard/private/tool-code/estadiamento-kdigo/calculator.js",
+            "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+          },
+          {
+            "id": "estadiamento-kdigo",
+            "app": "command-center",
+            "file": "apps/command-center/private/tool-code/estadiamento-kdigo/calculator.js",
+            "candidatePath": "reports/review-20261003/three-method-source-composition-stage-final25-v6/apps/command-center/private/tool-code/estadiamento-kdigo/calculator.js",
+            "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+          }
+        ],
+        "qualifications": [
+          "KDIGO2024 Table2/Table3 G/A categories and risk-table codes; Figure13 monitoring lookup only where its albuminuria boundaries agree with Table3. Exactly300mg/g monitoring is withheld with a source-discrepancy message, not adjudicated or approved. No CKD diagnosis, clinical prognosis, referral or treatment/full-method approval.",
+          "All862 original historical source fixtures/expected values/tolerances preserved. Four inline metadata cases are a declared subset of this complete downloadable bank.",
+          "Named arithmetic/source-code scope only; clinical, professional-language, instrument-rights and full-method approvals not performed."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b",
+      "sourceNumericsAmendment": {
+        "recordedAt": "2026-10-04T16:03:00.177Z",
+        "sourceComposition": {
+          "file": "reports/review-20261003/three-method-source-composition-candidate-final25-v6.json",
+          "sha256": "4a00118c9edd7ddc0754e0b26f99b277bd440b3de9dfd90aee7fbbce889d0733"
+        },
+        "independentCompositionPeer": {
+          "file": "reports/review-20261003/three-method-source-composition-independent-review-final25-v6.json",
+          "sha256": "d3c817a6da4bc80d587564c35c414450ffa965e3270e013015abfbb6aa6be4e5"
+        },
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/kdigo-pregnancy-age-independent-oracles-final25.json",
+            "sha256": "2c542b54712df602a6d782128acb77803c685dfe3ca4ad1ca8056eb69715e791"
+          }
+        ],
+        "inputIdentityAudit": {
+          "file": "reports/review-20261003/three-prospective-source-input-identity-audit-final25-r2.json",
+          "sha256": "8a92ba3da5694cba856099c1165be0a25fba8eebcca9094ad5edd602ee398570"
+        },
+        "beforeHash": "a817af30ac5669e6373c46aaeccdd91b9d36e4ac59f2b4547e13880081b00404",
+        "afterHash": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b",
+        "scope": "KDIGO2024 Table2/Table3 G/A categories and risk-table codes; Figure13 monitoring lookup only where its albuminuria boundaries agree with Table3. Exactly300mg/g monitoring is withheld with a source-discrepancy message, not adjudicated or approved. No CKD diagnosis, clinical prognosis, referral or treatment/full-method approval.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "originalSourceCasesPreserved": true,
+        "originalTolerancesPreserved": true
+      }
+    },
+    "limits": "A classificação pressupõe doença renal crônica estabelecida por alterações estruturais ou funcionais renais persistentes por pelo menos 3 meses. Sem outra evidência de lesão renal, G1 e G2 não estabelecem DRC. Uma única TFGe ou relação albumina/creatinina alterada não confirma cronicidade. O mapa G/A apresenta categorias de risco populacional, não uma probabilidade individual ou uma indicação automática de tratamento. Em recém-nascidos com doença renal claramente estabelecida, como malformações congênitas graves dos rins e trato urinário, a KDIGO ressalva que não é necessário aguardar 3 meses para confirmar DRC. KDIGO 2024: a tabela 3 apresenta A2 como 30–300 mg/g e A3 como > 300 mg/g; a figura 13 apresenta A2 como 30–299 mg/g e A3 como ≥ 300 mg/g. Esta ferramenta usa a tabela 3 para as categorias de albuminúria. O valor exato de 300 mg/g não integra a conferência da frequência de monitoramento da figura 13; a divergência documental requer revisão.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+          "edition": "KDIGO2024 CKD guideline",
+          "sectionsActuallyRead": "Definição e Tables1–3/PDF21; Practice Points1.1.3.1–3/PDF56; heatmap versus risco absoluto individual/PDF82; Pediatric considerations/PDF57: exceção neonatal à espera de3meses, leitura adicional direta2026-10-03",
+          "access": "primary-readable-pdf-text"
+        }
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false,
+      "sourceContextAmendments": [
+        {
+          "receipt": "reports/review-20261003/follow-up-source-notes-candidate-final25-v6.json",
+          "source": {
+            "id": "KDIGO2024",
+            "url": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
+            "edition": "2024",
+            "readScope": "Table3 printedS137/PDF22 and Figure13 printedS197/PDF82 directly read and images inspected; boundary300mg/g discrepancy retained, not adjudicated as clinical approval."
+          },
+          "documentaryModuleSha256": "e9ef96eaaf07245bfc696e4b1fd81409fca555e6d5bd8ca58be9ac14e00c41e9",
+          "excludedBoundary": "MonitoringfrequencyatRACexact300mg/gnotadjudicatedorapproved",
+          "clinicalApproval": "not-performed"
+        }
+      ]
     }
   },
-  "review": {
-    "id": "estadiamento-kdigo",
-    "status": "needs-review",
-    "reason": "O mapa G/A deve ser apresentado como categoria, não como diagnóstico por um exame. DRC requer cronicidade e contexto. Conferir limites de albuminúria, evidência de lesão e a nomenclatura atual; ocultar encaminhamento e frequência automáticos do arquivo importado.",
-    "sourceUrl": "https://kdigo.org/wp-content/uploads/2024/03/KDIGO-2024-CKD-Guideline.pdf",
-    "sourceTitle": "KDIGO 2024 Clinical Practice Guideline for CKD",
-    "sourceDate": "2024-03",
-    "publisherRegion": "Internacional / KDIGO",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/estadiamento-kdigo/calculator.js",
+    "bytes": 5746,
+    "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "6c5a8cb35d44340bb6a9d3efebb16060e01f704347ddcd4d7dee094ca219d278",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "3ba26d0737e9ce899ac271f15b8c2937e90ea030b1990703318d52c5cc805c07",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "3ba26d0737e9ce899ac271f15b8c2937e90ea030b1990703318d52c5cc805c07",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

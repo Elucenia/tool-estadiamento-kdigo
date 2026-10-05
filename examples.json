@@ -1,6 +1,13 @@
 [
   {
-    "label": "TFG 95, RAC 10: G1 A1, baixo risco",
+    "id": "estadiamento-kdigo",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+    "originalInput": {
+      "tfg": 95,
+      "rac": 10
+    },
     "input": {
       "tfg": 95,
       "rac": 10
@@ -10,14 +17,36 @@
       "level": "low",
       "verdict": "baixo risco"
     },
-    "originalInput": {
-      "tfg": 95,
-      "rac": 10
+    "recordedResult": {
+      "main": [
+        "G1 A1",
+        ""
+      ],
+      "label": "Categoria KDIGO (TFG e albuminúria)",
+      "raw": {
+        "g": "G1",
+        "a": "A1",
+        "risk": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "TFG 70, RAC 40: G2 A2, risco moderado",
+    "id": "estadiamento-kdigo",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+    "originalInput": {
+      "tfg": 70,
+      "rac": 40
+    },
     "input": {
       "tfg": 70,
       "rac": 40
@@ -27,14 +56,36 @@
       "level": "mid",
       "verdict": "moderadamente aumentado"
     },
-    "originalInput": {
-      "tfg": 70,
-      "rac": 40
+    "recordedResult": {
+      "main": [
+        "G2 A2",
+        ""
+      ],
+      "label": "Categoria KDIGO (TFG e albuminúria)",
+      "raw": {
+        "g": "G2",
+        "a": "A2",
+        "risk": 1
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+    "id": "estadiamento-kdigo",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+    "originalInput": {
+      "tfg": 45,
+      "rac": 300
+    },
     "input": {
       "tfg": 45,
       "rac": 300
@@ -44,14 +95,36 @@
       "level": "high",
       "verdict": "G3a A2: alto risco"
     },
-    "originalInput": {
-      "tfg": 45,
-      "rac": 300
+    "recordedResult": {
+      "main": [
+        "G3a A2",
+        ""
+      ],
+      "label": "Categoria KDIGO (TFG e albuminúria)",
+      "raw": {
+        "g": "G3a",
+        "a": "A2",
+        "risk": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "TFG 25, RAC 20: G4 A1, muito alto risco",
+    "id": "estadiamento-kdigo",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+    "originalInput": {
+      "tfg": 25,
+      "rac": 20
+    },
     "input": {
       "tfg": 25,
       "rac": 20
@@ -61,10 +134,25 @@
       "level": "high",
       "verdict": "muito alto risco"
     },
-    "originalInput": {
-      "tfg": 25,
-      "rac": 20
+    "recordedResult": {
+      "main": [
+        "G4 A1",
+        ""
+      ],
+      "label": "Categoria KDIGO (TFG e albuminúria)",
+      "raw": {
+        "g": "G4",
+        "a": "A1",
+        "risk": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]
