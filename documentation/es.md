@@ -71,3 +71,55 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+G1 A1: bajo riesgo
+
+| Detalles del resultado | |
+| --- | --- |
+| TFG | G1 · normal o alta |
+| Albuminuria | A1 · normal a levemente aumentada |
+| Monitorización sugerida | 1* vez/veces por año |
+
+G1 o G2 con A1 solo es enfermedad renal crónica si hay otro marcador de lesión renal (sedimento, imagen, histología) durante más de 3 meses.
+
+
+### 2
+
+G2 A2: riesgo moderadamente aumentado
+
+| Detalles del resultado | |
+| --- | --- |
+| TFG | G2 · levemente disminuida |
+| Albuminuria | A2 · moderadamente aumentada |
+| Monitorización sugerida | 1 vez/veces por año |
+
+
+### 3
+
+G3a A2: alto riesgo
+
+| Detalles del resultado | |
+| --- | --- |
+| TFG | G3a · levemente a moderadamente disminuida |
+| Albuminuria | A2 · moderadamente aumentada |
+| Monitorización sugerida | No se define aquí: la Tabla 3 y la Figura 13 usan límites diferentes en 300 mg/g. Consulte la fuente. |
+
+
+### 4
+
+G4 A1: riesgo muy alto
+
+| Detalles del resultado | |
+| --- | --- |
+| TFG | G4 · gravemente disminuida |
+| Albuminuria | A1 · normal a levemente aumentada |
+| Monitorización sugerida | 3 vez/veces por año |
+
+TFG < 30 o albuminuria A3: derivar al nefrólogo (KDIGO).
+

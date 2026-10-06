@@ -71,3 +71,55 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+G1 A1: niedriges Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| GFR | G1 · normal oder hoch |
+| Albuminurie | A1 · normal bis leicht erhöht |
+| Empfohlene Überwachung | 1* Mal pro Jahr |
+
+G1 oder G2 mit A1 ist nur dann eine chronische Nierenerkrankung, wenn über mehr als 3 Monate ein anderer Marker für Nierenschädigung vorliegt (Sediment, Bildgebung, Histologie).
+
+
+### 2
+
+G2 A2: mäßig erhöhtes Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| GFR | G2 · leicht vermindert |
+| Albuminurie | A2 · mäßig erhöht |
+| Empfohlene Überwachung | 1 Mal pro Jahr |
+
+
+### 3
+
+G3a A2: hohes Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| GFR | G3a · leicht bis mäßig vermindert |
+| Albuminurie | A2 · mäßig erhöht |
+| Empfohlene Überwachung | Hier nicht festgelegt: Tabelle 3 und Abbildung 13 verwenden bei 300 mg/g unterschiedliche Grenzen. Prüfen Sie die Quelle. |
+
+
+### 4
+
+G4 A1: sehr hohes Risiko
+
+| Ergebnisdetails | |
+| --- | --- |
+| GFR | G4 · stark vermindert |
+| Albuminurie | A1 · normal bis leicht erhöht |
+| Empfohlene Überwachung | 3 Mal pro Jahr |
+
+GFR < 30 oder Albuminurie A3: an einen Nephrologen überweisen (KDIGO).
+

@@ -71,3 +71,55 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+G1 A1 : faible risque
+
+| Détails du résultat | |
+| --- | --- |
+| DFG | G1 · normale ou élevée |
+| Albuminurie | A1 · normale à légèrement augmentée |
+| Surveillance suggérée | 1* fois par an |
+
+G1 ou G2 avec A1 n’est une maladie rénale chronique que s’il existe un autre marqueur de lésion rénale (sédiment, imagerie, histologie) pendant plus de 3 mois.
+
+
+### 2
+
+G2 A2 : risque modérément accru
+
+| Détails du résultat | |
+| --- | --- |
+| DFG | G2 · légèrement diminuée |
+| Albuminurie | A2 · modérément augmentée |
+| Surveillance suggérée | 1 fois par an |
+
+
+### 3
+
+G3a A2 : risque élevé
+
+| Détails du résultat | |
+| --- | --- |
+| DFG | G3a · légèrement à modérément diminuée |
+| Albuminurie | A2 · modérément augmentée |
+| Surveillance suggérée | Non définie ici : le Tableau 3 et la Figure 13 utilisent des limites différentes à 300 mg/g. Vérifiez la source. |
+
+
+### 4
+
+G4 A1 : risque très élevé
+
+| Détails du résultat | |
+| --- | --- |
+| DFG | G4 · gravement diminuée |
+| Albuminurie | A1 · normale à légèrement augmentée |
+| Surveillance suggérée | 3 fois par an |
+
+DFG < 30 ou albuminurie A3 : adresser à un néphrologue (KDIGO).
+

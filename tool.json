@@ -201,7 +201,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "KDIGO 2024:CGA,6 categorias TFG(G 3 a/b)×3 albuminúria, heatmap; sem diagnósticoisolado",
-    "implementationVersion": "estadiamento-kdigo@native-2026-10-03+bea069ba29a0",
+    "implementationVersion": "estadiamento-kdigo@native-2026-10-05+077b25e4da62",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/38490803/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -374,7 +374,7 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b",
+      "implementationHash": "077b25e4da626c0d90e529c21800e8d99bf5912aba0d24ef0547d0462ad4a042",
       "sourceNumericsAmendment": {
         "recordedAt": "2026-10-04T16:03:00.177Z",
         "sourceComposition": {
@@ -404,7 +404,35 @@
         "fullMethodConformance": "not-performed",
         "originalSourceCasesPreserved": true,
         "originalTolerancesPreserved": true
-      }
+      },
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "estadiamento-kdigo@native-2026-10-03+bea069ba29a0",
+          "previousImplementationHash": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b",
+          "implementationHash": "077b25e4da626c0d90e529c21800e8d99bf5912aba0d24ef0547d0462ad4a042",
+          "scientificBodySha256": "dd12ac6a37d6688b11da471fbf45fae10412871ffa2391f7f7ea3299927f0357",
+          "metadataContractHash": "b84c24ae5f6c981f62cc54432aeecfdf17dd04bb93325ba926149cf2b37ca6fe",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "A classificação pressupõe doença renal crônica estabelecida por alterações estruturais ou funcionais renais persistentes por pelo menos 3 meses. Sem outra evidência de lesão renal, G1 e G2 não estabelecem DRC. Uma única TFGe ou relação albumina/creatinina alterada não confirma cronicidade. O mapa G/A apresenta categorias de risco populacional, não uma probabilidade individual ou uma indicação automática de tratamento. Em recém-nascidos com doença renal claramente estabelecida, como malformações congênitas graves dos rins e trato urinário, a KDIGO ressalva que não é necessário aguardar 3 meses para confirmar DRC. KDIGO 2024: a tabela 3 apresenta A2 como 30–300 mg/g e A3 como > 300 mg/g; a figura 13 apresenta A2 como 30–299 mg/g e A3 como ≥ 300 mg/g. Esta ferramenta usa a tabela 3 para as categorias de albuminúria. O valor exato de 300 mg/g não integra a conferência da frequência de monitoramento da figura 13; a divergência documental requer revisão.",
     "limitsEvidence": {
@@ -438,20 +466,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/estadiamento-kdigo/calculator.js",
-    "bytes": 5746,
-    "sha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b"
+    "bytes": 5951,
+    "sha256": "077b25e4da626c0d90e529c21800e8d99bf5912aba0d24ef0547d0462ad4a042"
   },
-  "sourceToolSha256": "6c5a8cb35d44340bb6a9d3efebb16060e01f704347ddcd4d7dee094ca219d278",
+  "sourceToolSha256": "540eb2e2c31099e3802c2eeb3604c6fa1f6f8b26fccbf474841ed98dca6201e5",
   "omittedFullReferenceBanks": [
     {
       "rows": 4,
       "sha256": "3ba26d0737e9ce899ac271f15b8c2937e90ea030b1990703318d52c5cc805c07",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 4,
       "sha256": "3ba26d0737e9ce899ac271f15b8c2937e90ea030b1990703318d52c5cc805c07",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

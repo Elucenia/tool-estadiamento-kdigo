@@ -71,3 +71,55 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+G1 A1: basso rischio
+
+| Dettagli del risultato | |
+| --- | --- |
+| GFR | G1 · normale o alta |
+| Albuminuria | A1 · normale o lievemente aumentata |
+| Monitoraggio suggerito | 1* volta/e all’anno |
+
+G1 o G2 con A1 è malattia renale cronica solo se è presente un altro marker di danno renale (sedimento, imaging, istologia) per più di 3 mesi.
+
+
+### 2
+
+G2 A2: rischio moderatamente aumentato
+
+| Dettagli del risultato | |
+| --- | --- |
+| GFR | G2 · lievemente ridotta |
+| Albuminuria | A2 · moderatamente aumentata |
+| Monitoraggio suggerito | 1 volta/e all’anno |
+
+
+### 3
+
+G3a A2: rischio elevato
+
+| Dettagli del risultato | |
+| --- | --- |
+| GFR | G3a · lievemente-moderatamente ridotta |
+| Albuminuria | A2 · moderatamente aumentata |
+| Monitoraggio suggerito | Non definita qui: la Tabella 3 e la Figura 13 usano limiti diversi a 300 mg/g. Verificare la fonte. |
+
+
+### 4
+
+G4 A1: rischio molto elevato
+
+| Dettagli del risultato | |
+| --- | --- |
+| GFR | G4 · gravemente ridotta |
+| Albuminuria | A1 · normale o lievemente aumentata |
+| Monitoraggio suggerito | 3 volta/e all’anno |
+
+GFR < 30 o albuminuria A3: inviare al nefrologo (KDIGO).
+

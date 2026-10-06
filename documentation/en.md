@@ -71,3 +71,55 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+G1 A1: low risk
+
+| Result details | |
+| --- | --- |
+| GFR | G1 · normal or high |
+| Albuminuria | A1 · normal to mildly increased |
+| Suggested monitoring | 1* times per year |
+
+G1 or G2 with A1 is chronic kidney disease only if there is another marker of kidney damage (sediment, imaging, histology) for more than 3 months.
+
+
+### 2
+
+G2 A2: moderately increased risk
+
+| Result details | |
+| --- | --- |
+| GFR | G2 · mildly decreased |
+| Albuminuria | A2 · moderately increased |
+| Suggested monitoring | 1 time(s) per year |
+
+
+### 3
+
+G3a A2: high risk
+
+| Result details | |
+| --- | --- |
+| GFR | G3a · mildly to moderately decreased |
+| Albuminuria | A2 · moderately increased |
+| Suggested monitoring | Not defined here: Table 3 and Figure 13 use different boundaries at 300 mg/g. Check the source. |
+
+
+### 4
+
+G4 A1: very high risk
+
+| Result details | |
+| --- | --- |
+| GFR | G4 · severely reduced |
+| Albuminuria | A1 · normal to mildly increased |
+| Suggested monitoring | 3 time(s) per year |
+
+GFR < 30 or albuminuria A3: refer to a nephrologist (KDIGO).
+

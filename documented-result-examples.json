@@ -1,0 +1,2288 @@
+{
+  "id": "estadiamento-kdigo",
+  "implementationVersion": "estadiamento-kdigo@native-2026-10-05+077b25e4da62",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "G1 · normal ou alta",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminúria",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "A1 · normal a levemente aumentada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorização sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1* vez(es) por ano",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: baixo risco",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "G1 ou G2 com A1 só é doença renal crônica se houver outro marcador de lesão renal (sedimento, imagem, histologia) por mais de 3 meses.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "G2 · levemente diminuída",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminúria",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "A2 · moderadamente aumentada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorização sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1 vez(es) por ano",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: risco moderadamente aumentado",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "G3a · leve a moderadamente diminuída",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminúria",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "A2 · moderadamente aumentada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorização sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "Não definida aqui: a Tabela 3 e a Figura 13 usam limites diferentes em 300 mg/g. Confira a fonte.",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: alto risco",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "G4 · gravemente diminuída",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminúria",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "A1 · normal a levemente aumentada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorização sugerida",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "3 vez(es) por ano",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: muito alto risco",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "TFG < 30 ou albuminúria A3: encaminhar ao nefrologista (KDIGO).",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "en",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · normal or high",
+                "locale": "en",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "en",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normal to mildly increased",
+                "locale": "en",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Suggested monitoring",
+                "locale": "en",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1* times per year",
+                "locale": "en",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: low risk",
+            "locale": "en",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 or G2 with A1 is chronic kidney disease only if there is another marker of kidney damage (sediment, imaging, histology) for more than 3 months.",
+            "locale": "en",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "en",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · mildly decreased",
+                "locale": "en",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "en",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · moderately increased",
+                "locale": "en",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Suggested monitoring",
+                "locale": "en",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1 time(s) per year",
+                "locale": "en",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: moderately increased risk",
+            "locale": "en",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "en",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · mildly to moderately decreased",
+                "locale": "en",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "en",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · moderately increased",
+                "locale": "en",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Suggested monitoring",
+                "locale": "en",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "Not defined here: Table 3 and Figure 13 use different boundaries at 300 mg/g. Check the source.",
+                "locale": "en",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: high risk",
+            "locale": "en",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "en",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · severely reduced",
+                "locale": "en",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "en",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normal to mildly increased",
+                "locale": "en",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Suggested monitoring",
+                "locale": "en",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "3 time(s) per year",
+                "locale": "en",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: very high risk",
+            "locale": "en",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "GFR < 30 or albuminuria A3: refer to a nephrologist (KDIGO).",
+            "locale": "en",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "es",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · normal o alta",
+                "locale": "es",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "es",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normal a levemente aumentada",
+                "locale": "es",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorización sugerida",
+                "locale": "es",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1* vez/veces por año",
+                "locale": "es",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: bajo riesgo",
+            "locale": "es",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 o G2 con A1 solo es enfermedad renal crónica si hay otro marcador de lesión renal (sedimento, imagen, histología) durante más de 3 meses.",
+            "locale": "es",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "es",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · levemente disminuida",
+                "locale": "es",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "es",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · moderadamente aumentada",
+                "locale": "es",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorización sugerida",
+                "locale": "es",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1 vez/veces por año",
+                "locale": "es",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: riesgo moderadamente aumentado",
+            "locale": "es",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "es",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · levemente a moderadamente disminuida",
+                "locale": "es",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "es",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · moderadamente aumentada",
+                "locale": "es",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorización sugerida",
+                "locale": "es",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "No se define aquí: la Tabla 3 y la Figura 13 usan límites diferentes en 300 mg/g. Consulte la fuente.",
+                "locale": "es",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: alto riesgo",
+            "locale": "es",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "TFG",
+                "locale": "es",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · gravemente disminuida",
+                "locale": "es",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "es",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normal a levemente aumentada",
+                "locale": "es",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitorización sugerida",
+                "locale": "es",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "3 vez/veces por año",
+                "locale": "es",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: riesgo muy alto",
+            "locale": "es",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "TFG < 30 o albuminuria A3: derivar al nefrólogo (KDIGO).",
+            "locale": "es",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DFG",
+                "locale": "fr",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · normale ou élevée",
+                "locale": "fr",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "fr",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normale à légèrement augmentée",
+                "locale": "fr",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Surveillance suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1* fois par an",
+                "locale": "fr",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1 : faible risque",
+            "locale": "fr",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 ou G2 avec A1 n’est une maladie rénale chronique que s’il existe un autre marqueur de lésion rénale (sédiment, imagerie, histologie) pendant plus de 3 mois.",
+            "locale": "fr",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DFG",
+                "locale": "fr",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · légèrement diminuée",
+                "locale": "fr",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "fr",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · modérément augmentée",
+                "locale": "fr",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Surveillance suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1 fois par an",
+                "locale": "fr",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2 : risque modérément accru",
+            "locale": "fr",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DFG",
+                "locale": "fr",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · légèrement à modérément diminuée",
+                "locale": "fr",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "fr",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · modérément augmentée",
+                "locale": "fr",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Surveillance suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "Non définie ici : le Tableau 3 et la Figure 13 utilisent des limites différentes à 300 mg/g. Vérifiez la source.",
+                "locale": "fr",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2 : risque élevé",
+            "locale": "fr",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "DFG",
+                "locale": "fr",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · gravement diminuée",
+                "locale": "fr",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "fr",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normale à légèrement augmentée",
+                "locale": "fr",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Surveillance suggérée",
+                "locale": "fr",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "3 fois par an",
+                "locale": "fr",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1 : risque très élevé",
+            "locale": "fr",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "DFG < 30 ou albuminurie A3 : adresser à un néphrologue (KDIGO).",
+            "locale": "fr",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "de",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · normal oder hoch",
+                "locale": "de",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "de",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normal bis leicht erhöht",
+                "locale": "de",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Empfohlene Überwachung",
+                "locale": "de",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1* Mal pro Jahr",
+                "locale": "de",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: niedriges Risiko",
+            "locale": "de",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 oder G2 mit A1 ist nur dann eine chronische Nierenerkrankung, wenn über mehr als 3 Monate ein anderer Marker für Nierenschädigung vorliegt (Sediment, Bildgebung, Histologie).",
+            "locale": "de",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "de",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · leicht vermindert",
+                "locale": "de",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "de",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · mäßig erhöht",
+                "locale": "de",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Empfohlene Überwachung",
+                "locale": "de",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1 Mal pro Jahr",
+                "locale": "de",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: mäßig erhöhtes Risiko",
+            "locale": "de",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "de",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · leicht bis mäßig vermindert",
+                "locale": "de",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "de",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · mäßig erhöht",
+                "locale": "de",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Empfohlene Überwachung",
+                "locale": "de",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "Hier nicht festgelegt: Tabelle 3 und Abbildung 13 verwenden bei 300 mg/g unterschiedliche Grenzen. Prüfen Sie die Quelle.",
+                "locale": "de",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: hohes Risiko",
+            "locale": "de",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "de",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · stark vermindert",
+                "locale": "de",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminurie",
+                "locale": "de",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normal bis leicht erhöht",
+                "locale": "de",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Empfohlene Überwachung",
+                "locale": "de",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "3 Mal pro Jahr",
+                "locale": "de",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: sehr hohes Risiko",
+            "locale": "de",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "GFR < 30 oder Albuminurie A3: an einen Nephrologen überweisen (KDIGO).",
+            "locale": "de",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "it",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · normale o alta",
+                "locale": "it",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "it",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normale o lievemente aumentata",
+                "locale": "it",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitoraggio suggerito",
+                "locale": "it",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1* volta/e all’anno",
+                "locale": "it",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: basso rischio",
+            "locale": "it",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 o G2 con A1 è malattia renale cronica solo se è presente un altro marker di danno renale (sedimento, imaging, istologia) per più di 3 mesi.",
+            "locale": "it",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "it",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · lievemente ridotta",
+                "locale": "it",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "it",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · moderatamente aumentata",
+                "locale": "it",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitoraggio suggerito",
+                "locale": "it",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1 volta/e all’anno",
+                "locale": "it",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: rischio moderatamente aumentato",
+            "locale": "it",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "it",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · lievemente-moderatamente ridotta",
+                "locale": "it",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "it",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · moderatamente aumentata",
+                "locale": "it",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitoraggio suggerito",
+                "locale": "it",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "Non definita qui: la Tabella 3 e la Figura 13 usano limiti diversi a 300 mg/g. Verificare la fonte.",
+                "locale": "it",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: rischio elevato",
+            "locale": "it",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "it",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · gravemente ridotta",
+                "locale": "it",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Albuminuria",
+                "locale": "it",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · normale o lievemente aumentata",
+                "locale": "it",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Monitoraggio suggerito",
+                "locale": "it",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "3 volta/e all’anno",
+                "locale": "it",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: rischio molto elevato",
+            "locale": "it",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "GFR < 30 o albuminuria A3: inviare al nefrologo (KDIGO).",
+            "locale": "it",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "معدل الترشيح الكبيبي",
+                "locale": "ar",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · طبيعي أو مرتفع",
+                "locale": "ar",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ألبومينوريا",
+                "locale": "ar",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · طبيعي إلى مرتفع قليلًا",
+                "locale": "ar",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المراقبة المقترحة",
+                "locale": "ar",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "١* مرة/مرات في السنة",
+                "locale": "ar",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: خطر منخفض",
+            "locale": "ar",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 أو G2 مع A1 لا تُعدّ مرضًا كلويًا مزمنًا إلا إذا وُجد مؤشر آخر لأذية كلوية (الرواسب، التصوير، النسيج المرضي) لأكثر من 3 أشهر.",
+            "locale": "ar",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "معدل الترشيح الكبيبي",
+                "locale": "ar",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · منخفضة قليلاً",
+                "locale": "ar",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ألبومينوريا",
+                "locale": "ar",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · مرتفع بشكل متوسط",
+                "locale": "ar",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المراقبة المقترحة",
+                "locale": "ar",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "١ مرة/مرات في السنة",
+                "locale": "ar",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: خطر متزايد بشكل متوسط",
+            "locale": "ar",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "معدل الترشيح الكبيبي",
+                "locale": "ar",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · منخفضة قليلًا إلى متوسطًا",
+                "locale": "ar",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ألبومينوريا",
+                "locale": "ar",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · مرتفع بشكل متوسط",
+                "locale": "ar",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المراقبة المقترحة",
+                "locale": "ar",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "غير محددة هنا: يستخدم الجدول ٣ والشكل ١٣ حدودًا مختلفة عند ٣٠٠ mg/g. راجع المصدر.",
+                "locale": "ar",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: خطر مرتفع",
+            "locale": "ar",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "معدل الترشيح الكبيبي",
+                "locale": "ar",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · منخفضة بشدة",
+                "locale": "ar",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ألبومينوريا",
+                "locale": "ar",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · طبيعي إلى مرتفع قليلًا",
+                "locale": "ar",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "المراقبة المقترحة",
+                "locale": "ar",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "٣ مرة/مرات في السنة",
+                "locale": "ar",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: خطر مرتفع جدًا",
+            "locale": "ar",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "معدل الترشيح الكبيبي < 30 أو ألبومينوريا A3: أحِل إلى اختصاصي أمراض الكلى (KDIGO).",
+            "locale": "ar",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "zh",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · 正常或高",
+                "locale": "zh",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "白蛋白尿",
+                "locale": "zh",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · 正常至轻度升高",
+                "locale": "zh",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "建议监测",
+                "locale": "zh",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "每年1*次",
+                "locale": "zh",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1：低风险",
+            "locale": "zh",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1或G2伴A1只有在存在其他肾损伤标志物（尿沉渣、影像学、组织学）且持续超过3个月时，才属于慢性肾脏病。",
+            "locale": "zh",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "zh",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · 轻度下降",
+                "locale": "zh",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "白蛋白尿",
+                "locale": "zh",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · 中度升高",
+                "locale": "zh",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "建议监测",
+                "locale": "zh",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "每年1次",
+                "locale": "zh",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2：中度增加风险",
+            "locale": "zh",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "zh",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · 轻度至中度下降",
+                "locale": "zh",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "白蛋白尿",
+                "locale": "zh",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · 中度升高",
+                "locale": "zh",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "建议监测",
+                "locale": "zh",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "此处不予确定：表3与图13在300 mg/g处使用的界限不同。请核对来源。",
+                "locale": "zh",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2：高风险",
+            "locale": "zh",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "zh",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · 严重降低",
+                "locale": "zh",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "白蛋白尿",
+                "locale": "zh",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · 正常至轻度升高",
+                "locale": "zh",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "建议监测",
+                "locale": "zh",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "每年3次",
+                "locale": "zh",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1：极高风险",
+            "locale": "zh",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "GFR < 30 或白蛋白尿 A3：转诊至肾内科医生（KDIGO）。",
+            "locale": "zh",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "ja",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1・正常または高値",
+                "locale": "ja",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "アルブミン尿",
+                "locale": "ja",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1・正常から軽度上昇",
+                "locale": "ja",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推奨されるモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "年1*回",
+                "locale": "ja",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1：低リスク",
+            "locale": "ja",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1またはG2でA1は、他の腎障害のマーカー（尿沈渣、画像、組織学）が3か月を超えて存在する場合にのみ慢性腎臓病である。",
+            "locale": "ja",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "ja",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2・軽度低下",
+                "locale": "ja",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "アルブミン尿",
+                "locale": "ja",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2・中等度上昇",
+                "locale": "ja",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推奨されるモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "年1回",
+                "locale": "ja",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2：中等度増加リスク",
+            "locale": "ja",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "ja",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a・軽度から中等度低下",
+                "locale": "ja",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "アルブミン尿",
+                "locale": "ja",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2・中等度上昇",
+                "locale": "ja",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推奨されるモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "ここでは定めていません。表3と図13は300 mg/gで異なる境界を用いています。出典を確認してください。",
+                "locale": "ja",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2：高リスク",
+            "locale": "ja",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "GFR",
+                "locale": "ja",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · 著しく低下",
+                "locale": "ja",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "アルブミン尿",
+                "locale": "ja",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1・正常から軽度上昇",
+                "locale": "ja",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "推奨されるモニタリング",
+                "locale": "ja",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "年3回",
+                "locale": "ja",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1：非常に高いリスク",
+            "locale": "ja",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "GFR < 30 またはアルブミン尿 A3：腎臓内科医へ紹介する（KDIGO）。",
+            "locale": "ja",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जीएफआर",
+                "locale": "hi",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G1 · सामान्य या उच्च",
+                "locale": "hi",
+                "template": "documented-authored-b739f8c5ebf99487de1e"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एल्ब्यूमिन्यूरिया",
+                "locale": "hi",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · सामान्य से हल्का बढ़ा हुआ",
+                "locale": "hi",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "सुझाई गई निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1* बार प्रति वर्ष",
+                "locale": "hi",
+                "template": "documented-authored-261fa78854db2aaabc62",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G1 A1: कम जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-5497205d30ea99d60298"
+          },
+          "note": {
+            "text": "G1 या G2 के साथ A1 केवल तभी क्रोनिक किडनी रोग है जब 3 महीनों से अधिक समय तक गुर्दे की क्षति का कोई अन्य सूचक (मूत्र अवसाद, इमेजिंग, हिस्टोलॉजी) मौजूद हो।",
+            "locale": "hi",
+            "template": "documented-authored-06f1af4ac0e7d149182f"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जीएफआर",
+                "locale": "hi",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G2 · हल्का घटा हुआ",
+                "locale": "hi",
+                "template": "documented-authored-e00b2bc9f0817d824d2b"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एल्ब्यूमिन्यूरिया",
+                "locale": "hi",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · मध्यम रूप से बढ़ा हुआ",
+                "locale": "hi",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "सुझाई गई निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "1 बार प्रति वर्ष",
+                "locale": "hi",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  1
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G2 A2: मध्यम रूप से बढ़ा हुआ जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-1ad20c63507a69231dfb"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जीएफआर",
+                "locale": "hi",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G3a · हल्का से मध्यम घटा हुआ",
+                "locale": "hi",
+                "template": "documented-authored-c280dc4eaa8066831747"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एल्ब्यूमिन्यूरिया",
+                "locale": "hi",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A2 · मध्यम रूप से बढ़ा हुआ",
+                "locale": "hi",
+                "template": "documented-authored-43ba75d4b582884f4bed"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "सुझाई गई निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "यहाँ निर्धारित नहीं: तालिका 3 और चित्र 13 में 300 mg/g पर अलग-अलग सीमाएँ हैं। स्रोत जाँचें।",
+                "locale": "hi",
+                "template": "documented-authored-b22bf21d986e1f144910"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G3a A2: उच्च जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-190d30eae95198773be4"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "जीएफआर",
+                "locale": "hi",
+                "template": "documented-authored-f9c3ae1ffcb4a1d83036"
+              },
+              "value": {
+                "text": "G4 · गंभीर रूप से कम",
+                "locale": "hi",
+                "template": "documented-authored-ef5ee12d3aaeb3ccbf4d"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "एल्ब्यूमिन्यूरिया",
+                "locale": "hi",
+                "template": "documented-authored-c5a3fbe516761b2318fa"
+              },
+              "value": {
+                "text": "A1 · सामान्य से हल्का बढ़ा हुआ",
+                "locale": "hi",
+                "template": "documented-authored-b4b3f286416fff549520"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "सुझाई गई निगरानी",
+                "locale": "hi",
+                "template": "documented-authored-2b806454e26bcb2c8002"
+              },
+              "value": {
+                "text": "3 बार प्रति वर्ष",
+                "locale": "hi",
+                "template": "documented-authored-0eda82c38510646d0788",
+                "sourceNumbers": [
+                  3
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "G4 A1: बहुत उच्च जोखिम",
+            "locale": "hi",
+            "template": "documented-authored-4e80e5b8c41a3cf3408b"
+          },
+          "note": {
+            "text": "GFR < 30 या एल्ब्यूमिन्यूरिया A3: नेफ्रोलॉजिस्ट के पास रेफर करें (KDIGO)।",
+            "locale": "hi",
+            "template": "documented-authored-093b0b83252b3ba4fc65"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

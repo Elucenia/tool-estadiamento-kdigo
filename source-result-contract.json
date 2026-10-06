@@ -1,0 +1,296 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "estadiamento-kdigo",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "47af06d35a2e533833bdce3741e58724ce79bdb4",
+    "oldEngineSha256": "bea069ba29a0c7b25168dc75bd2feec9f268bc300d3f98cab88c5a67c734738b",
+    "currentEngineSha256": "077b25e4da626c0d90e529c21800e8d99bf5912aba0d24ef0547d0462ad4a042"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "TFG 95, RAC 10: G1 A1, baixo risco",
+      "input": {
+        "tfg": 95,
+        "rac": 10
+      },
+      "publicOutput": {
+        "id": "estadiamento-kdigo",
+        "main": [
+          "G1 A1",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G1",
+          "a": "A1",
+          "risk": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "G1 A1",
+        "level": "low",
+        "verdict": "baixo risco"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "G1 A1",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "level": "low",
+        "verdict": "G1 A1: baixo risco",
+        "rows": [
+          [
+            "TFG",
+            "G1 · normal ou alta"
+          ],
+          [
+            "Albuminúria",
+            "A1 · normal a levemente aumentada"
+          ],
+          [
+            "Monitorização sugerida",
+            "1* vez(es) por ano"
+          ]
+        ],
+        "note": "G1 ou G2 com A1 só é doença renal crônica se houver outro marcador de lesão renal (sedimento, imagem, histologia) por mais de 3 meses.",
+        "raw": {
+          "g": "G1",
+          "a": "A1",
+          "risk": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "TFG 70, RAC 40: G2 A2, risco moderado",
+      "input": {
+        "tfg": 70,
+        "rac": 40
+      },
+      "publicOutput": {
+        "id": "estadiamento-kdigo",
+        "main": [
+          "G2 A2",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G2",
+          "a": "A2",
+          "risk": 1
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "G2 A2",
+        "level": "mid",
+        "verdict": "moderadamente aumentado"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "G2 A2",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "level": "mid",
+        "verdict": "G2 A2: risco moderadamente aumentado",
+        "rows": [
+          [
+            "TFG",
+            "G2 · levemente diminuída"
+          ],
+          [
+            "Albuminúria",
+            "A2 · moderadamente aumentada"
+          ],
+          [
+            "Monitorização sugerida",
+            "1 vez(es) por ano"
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "g": "G2",
+          "a": "A2",
+          "risk": 1
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "TFG 45 (limite G3a), RAC 300 (limite A2): G3a A2, alto risco",
+      "input": {
+        "tfg": 45,
+        "rac": 300
+      },
+      "publicOutput": {
+        "id": "estadiamento-kdigo",
+        "main": [
+          "G3a A2",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G3a",
+          "a": "A2",
+          "risk": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "G3a A2",
+        "level": "high",
+        "verdict": "G3a A2: alto risco"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "G3a A2",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "level": "high",
+        "verdict": "G3a A2: alto risco",
+        "rows": [
+          [
+            "TFG",
+            "G3a · leve a moderadamente diminuída"
+          ],
+          [
+            "Albuminúria",
+            "A2 · moderadamente aumentada"
+          ],
+          [
+            "Monitorização sugerida",
+            "Não definida aqui: a Tabela 3 e a Figura 13 usam limites diferentes em 300 mg/g. Confira a fonte."
+          ]
+        ],
+        "note": "",
+        "raw": {
+          "g": "G3a",
+          "a": "A2",
+          "risk": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "TFG 25, RAC 20: G4 A1, muito alto risco",
+      "input": {
+        "tfg": 25,
+        "rac": 20
+      },
+      "publicOutput": {
+        "id": "estadiamento-kdigo",
+        "main": [
+          "G4 A1",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "raw": {
+          "g": "G4",
+          "a": "A1",
+          "risk": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "main": "G4 A1",
+        "level": "high",
+        "verdict": "muito alto risco"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "G4 A1",
+          ""
+        ],
+        "label": "Categoria KDIGO (TFG e albuminúria)",
+        "level": "high",
+        "verdict": "G4 A1: muito alto risco",
+        "rows": [
+          [
+            "TFG",
+            "G4 · gravemente diminuída"
+          ],
+          [
+            "Albuminúria",
+            "A1 · normal a levemente aumentada"
+          ],
+          [
+            "Monitorização sugerida",
+            "3 vez(es) por ano"
+          ]
+        ],
+        "note": "TFG &lt; 30 ou albuminúria A3: encaminhar ao nefrologista (KDIGO).",
+        "raw": {
+          "g": "G4",
+          "a": "A1",
+          "risk": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}
